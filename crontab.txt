@@ -1,0 +1,28 @@
+50 21 * * 1 /usr/local/php/bin/php
+/var/www/html/emules/cront/task/setindexdatacache.php >/dev/null &
+50 21 * * 3 /usr/local/php/bin/php
+/var/www/html/emules/cront/task/setindexdatacache.php >/dev/null &
+50 21 * * 5 /usr/local/php/bin/php
+/var/www/html/emules/cront/task/setindexdatacache.php >/dev/null &
+2 22 * * 1 /usr/local/php/bin/php
+/var/www/html/emules/cront/grab/ed2kers/daygrap.php >/dev/null &
+2 21 * * 3 /usr/local/php/bin/php
+/var/www/html/btvideo/cront/grab/vvtor/daygrap.php >/dev/null &
+2 5 * * 1 /usr/local/php/bin/php
+/var/www/html/btvideo/cront/task/google_sitemap.php >/dev/null &
+2 5 * * 2 /usr/local/php/bin/php
+/var/www/html/emules/cront/task/google_sitemap.php >/dev/null &
+2 5 * * 3 /usr/local/php/bin/php
+/var/www/html/joker/cront/task/google_sitemap.php >/dev/null &
+2 21 * * 6 /usr/local/php/bin/php
+/var/www/html/btvideo/cront/grab/vvtor/daygrap.php >/dev/null &
+3 22 * * 4 /usr/local/php/bin/php
+/var/www/html/emules/cront/grab/ed2kers/daygrap.php >/dev/null &
+2 20 * * 6 /usr/local/php/bin/php
+/var/www/html/joker/cront/grab/jokeji/qgrap.php >/dev/null &
+3 20 * * 4 /usr/local/php/bin/php
+/var/www/html/joker/cront/grab/jokeji/qgrap.php >/dev/null &
+5 8 * * * /bin/sh /var/www/html/cront/hourpershell.sh &
+5 18 * * * /bin/sh /var/www/html/cront/hourpershell.sh &
+5 10 * * * /bin/sh /var/www/html/cront/daypershell.sh &
+5 16 * * * /bin/sh /var/www/html/cront/daypershell.sh &
