@@ -1,5 +1,5 @@
 <?php
-$root = '/usr/local/php/bin/php /var/www/html/emules/cront/grab/ed2kers/%srab.php';
+$root = '/usr/local/soft/php/bin/php /var/www/html/emules/cront/grab/ed2kers/%srab.php';
 $task = array('g');
 foreach($task as $val){
   $cmd = sprintf($root,$val);
